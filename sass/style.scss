@@ -1,0 +1,55 @@
+@import "_colors.scss";
+
+body{
+    
+    position: relative;
+     #newBox{
+             width:200px;
+             position: absolute;
+             right:0;
+             border:0px solid black;
+             font-family: calibri;
+             font-size: 20px;
+              .child-div{
+                width : 200px;
+                height : 80px;
+                border:0px solid black;
+                margin : 10px;
+                animation: 1s visibleDiv forwards;
+            }
+             
+        } 
+       
+        form{
+         input{
+                width:200px; 
+                height:50px;
+                outline: none;
+                position:absolute;
+                top:200%;
+                right:50%;
+                padding:10px;
+                margin-top:10%;
+                border:1px solid  #428bca;
+                border-radius: 5px;
+                @include colors-font_family;
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+        }
+     }
+@keyframes visibleDiv{
+    0% {
+        opacity: 1;
+    }
+    50%{
+         opacity: 1;
+    }
+    100%{
+        opacity: 0;
+       
+
+    }
+
+}
